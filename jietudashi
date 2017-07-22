@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>assets</key>
+			<array>
+				<dict>
+					<key>kind</key>
+					<string>software-package</string>
+					<key>url</key>
+					<string>http://chok8.u.qiniudn.com//dafuai9CtSHXLLI201707221354312632.ipa</string>
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>display-image</string>
+					<key>needs-shine</key>
+					<true/>
+					<key>url</key>
+					<string>http://chok8.u.qiniudn.com/gudulaoren.png</string>
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>full-size-image</string>
+					<key>needs-shine</key>
+					<true/>
+					<key>url</key>
+					<string>http://chok8.u.qiniudn.com/gudulaoren.png</string>
+				</dict>
+			</array>
+			<key>metadata</key>
+			<dict>
+				<key>bundle-identifier</key>
+				<string>com.asiainfo.LetterPlus</string>
+				<key>bundle-version</key>
+				<string>6.3.16</string>
+				<key>kind</key>
+				<string>software</string>
+				<key>subtitle</key>
+				<string>微信截图大师</string>
+				<key>title</key>
+				<string>免费微信多开 微信公众号 孤独老人</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
