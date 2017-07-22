@@ -33,15 +33,15 @@
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.asiainfo.LetterPlus</string>
+				<string>com.liguangming.Shadowrocket</string>
 				<key>bundle-version</key>
-				<string>6.3.16</string>
+				<string>2.1.10</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>subtitle</key>
-				<string>微信截图大师</string>
+				<string>Shadowrocket</string>
 				<key>title</key>
-				<string>免费微信多开 微信公众号 孤独老人</string>
+				<string> 微信公众号 孤独老人</string>
 			</dict>
 		</dict>
 	</array>
