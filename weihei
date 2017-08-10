@@ -11,7 +11,7 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>http://chok8.u.qiniudn.com/sb.ipa</string>
+					<string>https://s.beta.myapp.com/myapp/rdmexp/exp/file/comagainfree002_65832_25f3f3ed-c653-4c5e-9d05-72dfe090160c.ipa</string>
 				</dict>
 				<dict>
 					<key>kind</key>
@@ -33,13 +33,13 @@
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.domainname.wc</string>
+				<string>com.again.free002</string>
 				<key>bundle-version</key>
-				<string>6.5.8</string>
+				<string>6.5.8.32</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>subtitle</key>
-				<string>WX多开</string>
+				<string>微信微黑</string>
 				<key>title</key>
 				<string>微信-关注WX公众号 孤独老人</string>
 			</dict>
