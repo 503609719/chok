@@ -11,7 +11,7 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>https://s.beta.myapp.com/myapp/rdmexp/exp/file/combaobaobaobb1_65832_635ba00e-83e5-4751-bb36-6d4133a2b319.ipa</string>
+					<string>https://s.beta.myapp.com/myapp/rdmexp/exp/file/comagainfree001_65832_dc92f09b-c518-48c8-a79f-b83a3a0882d3.ipa</string>
 				</dict>
 				<dict>
 					<key>kind</key>
@@ -33,15 +33,15 @@
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.baobao.baobb1</string>
+				<string>com.again.free001</string>
 				<key>bundle-version</key>
-				<string>6.5.8</string>
+				<string>6.5.8.32</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>subtitle</key>
-				<string>WX多开</string>
+				<string>微信微紫</string>
 				<key>title</key>
-				<string>微信微宝-关注WX公众号 孤独老人</string>
+				<string>微信微紫-关注WX公众号 孤独老人</string>
 			</dict>
 		</dict>
 	</array>
