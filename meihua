@@ -11,7 +11,7 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>http://chok8.u.qiniudn.com/niuniu.ipa</string>
+					<string>https://s.beta.myapp.com/myapp/rdmexp/exp/file/comtencentxinfr1_65832_4ad4e8fe-0dbb-5337-a313-655528cd0739.ipa</string>
 				</dict>
 				<dict>
 					<key>kind</key>
@@ -33,15 +33,15 @@
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.asiainfo.LetterPlus</string>
+				<string>com.tencent.xin.fr1</string>
 				<key>bundle-version</key>
-				<string>6.3.25</string>
+				<string>6.5.8.32</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>subtitle</key>
 				<string>WX多开</string>
 				<key>title</key>
-				<string>牛牛辅助-关注WX公众号 孤独老人</string>
+				<string>多功能美化版-关注WX公众号 孤独老人</string>
 			</dict>
 		</dict>
 	</array>
