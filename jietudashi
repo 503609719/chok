@@ -11,7 +11,7 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>http://chok8.u.qiniudn.com//dafuai9CtSHXLLI201707221354312632.ipa</string>
+					<string>http://chok8.u.qiniudn.com/qingwa.ipa</string>
 				</dict>
 				<dict>
 					<key>kind</key>
@@ -39,9 +39,9 @@
 				<key>kind</key>
 				<string>software</string>
 				<key>subtitle</key>
-				<string>WX多开</string>
+				<string>旅行青蛙</string>
 				<key>title</key>
-				<string>微信截图大师-关注WX公众号 孤独老人</string>
+				<string关注WX公众号 孤独老人</string>
 			</dict>
 		</dict>
 	</array>
