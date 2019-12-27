@@ -156,12 +156,12 @@ textarea.form-control{ height: auto;}
 .stui_nav__taddar.fixed{ position: fixed; bottom: 0; width: 100%; padding: 5px 0 0;}
 
 /* vod-list */
-.stui-vodlist__thumb{display: block; position: relative; padding-top: 150%; background: url(../img/load.gif) no-repeat; background-position: 50% 50%; background-size: cover;}
-.stui-vodlist__thumb.square{ padding-top: 100%; background: url(../img/load_f.gif) no-repeat; background-position: 50% 50%; background-size: cover;}
-.stui-vodlist__thumb.active{ padding-top: 60%; background: url(../img/load_w.gif) no-repeat; background-position: 50% 50%; background-size: cover;}
+.stui-vodlist__thumb{display: block; position: relative; padding-top: 150%; background: url(../shoutu/img/load.gif) no-repeat; background-position: 50% 50%; background-size: cover;}
+.stui-vodlist__thumb.square{ padding-top: 100%; background: url(../shoutu/img/load_f.gif) no-repeat; background-position: 50% 50%; background-size: cover;}
+.stui-vodlist__thumb.active{ padding-top: 60%; background: url(../shoutu/img/load_w.gif) no-repeat; background-position: 50% 50%; background-size: cover;}
 .stui-vodlist__thumb.picture {background: none; overflow: hidden;}
 .stui-vodlist__thumb.picture img{position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
-.stui-vodlist__thumb .play{display: none; position: absolute; top: 0; z-index: 1; width: 100%; height: 100%; background: rgba(0,0,0,0.1) url(../img/play.png) center no-repeat;}
+.stui-vodlist__thumb .play{display: none; position: absolute; top: 0; z-index: 1; width: 100%; height: 100%; background: rgba(0,0,0,0.1) url(../shoutu/img/play.png) center no-repeat;}
 .stui-vodlist__thumb .play.active{ display: block;}
 .stui-vodlist__thumb:hover .play{ display: block;}
 .stui-vodlist__detail.active{ padding: 0 10px 10px;}

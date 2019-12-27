@@ -15,7 +15,7 @@ body{ padding-top: 80px;}
 /* header-logo */
 .stui-header__logo,.stui-header__menu,.stui-header__search{float:left}
 .stui-header__logo{margin-top: 5px;}
-.stui-header__logo .logo{display:block;width:150px;height:50px;background:url(../img/logo_f.png) no-repeat; background-position:50% 50%;background-size:cover}
+.stui-header__logo .logo{display:block;width:150px;height:50px;background:url(../shoutu/img/logo_f.png) no-repeat; background-position:50% 50%;background-size:cover}
 
 /* header-seacrh */
 .stui-header__search{position: relative; width:300px; margin-left: 50px; margin-top: 12px;}
@@ -121,7 +121,7 @@ body{ padding-top: 80px;}
 
     /* header */
 	.stui-header__logo{ margin-top: 15px;}
-	.stui-header__logo .logo{width:127px;height:30px;background:url(../img/logo_min_f.png) no-repeat;background-position:50% 50%;background-size:cover}
+	.stui-header__logo .logo{width:127px;height:30px;background:url(../shoutu/img/logo_min_f.png) no-repeat;background-position:50% 50%;background-size:cover}
 	.stui-header__search{ width: 200px; margin-left: 20px;}
 	.stui-header__menu > li{ margin-left: 20px;}
 	.stui-header__user > li{ margin-left: 20px;}
