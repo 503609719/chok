@@ -1,5 +1,5 @@
 var url = document.referrer;
-    if (url.indexOf("www.chok8.com") >= 0|| url.indexOf("www.139ys.com") >= 0 ){}else{alert('授权联系微信chokchok8')
+    if (url.indexOf("www.chok8.com") >= 0|| url.indexOf("www.gai4.com") >= 0|| url.indexOf("www.139ys.com") >= 0 ){}else{alert('授权联系微信chokchok8')
         window.parent.location = 'https://www.chok8.com';
     }
 /**
