@@ -102,7 +102,7 @@ var stui = {
 			});
 		},
 		'qrcode': function() {
-			$("img.qrcode").attr("src", "https://api.isoyu.com/qr/?m=0&e=L&p=7&url=" + encodeURIComponent(stui.browser.url) + "")
+			$("img.qrcode").attr("src", "https://api.lykep.com/api/qrcode?frame=1&e=L&size=100&text=" + encodeURIComponent(stui.browser.url) + "")
 		}
 	},
 	'common': {//公共基础
