@@ -27,12 +27,12 @@ var urls = GetQueryString('url') ? GetQueryString('url') : './welcome.html';
 var ishttps = 'https:' == document.location.protocol ? true : false;
 var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
 if (urls.indexOf('.m3u8') > -1 || urls.indexOf('.flv') > -1|| urls.indexOf('.mp4') > -1) {
-	var playurl = './dp.html?url=' + urls;
+	var playurl = './dplayer/?url=' + urls;
 	if ((navigator.userAgent.indexOf('MSIE') >= 0) || (navigator.userAgent.indexOf('Trident') >= 0)) {
 	    if (ishttps) {
 		    var urls = urls.replace('http://', 'https://');
 		}
-		var playurl = './dp.html?url=' + urls
+		var playurl = './dplayer/?url=' + urls
 	}
 } else if (urls.indexOf('.qq.com') > -1 || urls.indexOf('.iqiyi.com') > -1 || urls.indexOf('.bilibili.com') > -1 || urls.indexOf('.mgtv.com') > -1 || urls.indexOf('.youku.com') > -1 || urls.indexOf('.sohu.com') > -1 || urls.indexOf('.le.com') > -1 || urls.indexOf('.pptv.com') > -1|| urls.indexOf('.ixigua.com') > -1) {
 	var playurl = './jiexi/?url=' + urls;
@@ -41,5 +41,8 @@ if (urls.indexOf('.m3u8') > -1 || urls.indexOf('.flv') > -1|| urls.indexOf('.mp4
 }
 document.getElementById('player').innerHTML = '<iframe width="100%" height="100%" allowTransparency="true" allowfullscreen="true" frameborder="0" scrolling="no" src="' + playurl + '"></iframe>';
 </script>
+<div style="display:none;">
+<script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1280253265&web_id=1280253265"></script>
+</div>
 </body>
 </html>
