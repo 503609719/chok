@@ -1,0 +1,220 @@
+body,html,#a1 {
+	background-color:#000;
+	padding:0;
+	margin:0;
+	color:transparent;
+	height:100%;
+	width:100%;
+}
+.player {
+	position:relative;
+	width:100%;
+	background-color:#000
+}
+.vod {
+	width:100%;
+	background-color:#000
+}
+.video {
+	width:100%;
+	height:100%;
+	margin-bottom:40px
+}
+.cmd {
+	margin:0 auto;
+	width:100%;
+	height:40px;
+	line-height:40px;
+	position:absolute;
+	bottom:0;
+	background-color:#111;
+	box-sizing:border-box
+}
+.left {
+	float:left
+}
+.right {
+	float:right;
+	margin-top:-30px
+}
+.centent {
+	margin-left:50px;
+	margin-right:60px
+}
+.tvp_button {
+	background:0 0;
+	cursor:pointer;
+	width:46px;
+	height:40px
+}
+.tvp_button button {
+	display:block;
+	width:100%;
+	height:100%;
+	padding:0;
+	border:0 none;
+	background:0 0;
+	text-align:center;
+	font-size:0;
+	cursor:pointer
+}
+.tvp_play .tvp_btn_value {
+	display:inline-block;
+	width:0;
+	height:0;
+	margin-left:16px;
+	vertical-align:middle;
+	background:0 0;
+	border:15px solid transparent;
+	border-width:10px 15px;
+	border-left-color:#fff;
+	font-size:0;
+	color:transparent
+}
+.tvp_pause .tvp_btn_value {
+	display:inline-block;
+	vertical-align:middle;
+	background:0 0;
+	font-size:0;
+	color:transparent;
+	width:10px;
+	height:15px;
+	border:0 none;
+	margin-left:0;
+	border-left:2px solid#fff;
+	border-right:2px solid#fff
+}
+.tvp_fullscreen_button {
+	width:50px;
+	height:100%
+}
+.tvp_fullscreen_button button {
+	position:relative;
+	display:block;
+	top:5px;
+	width:100%;
+	height:30px;
+	background:url(mobile1.png) no-repeat center;
+	cursor:pointer
+}
+.tvp_time_total {
+	position:relative;
+	display:block;
+	top:5px;
+	left:8px;
+	width:100%;
+	height:30px;
+	background:#191919;
+	cursor:pointer
+}
+.tvp_time_loaded {
+	position:relative;
+	display:block;
+	width:10%;
+	height:30px;
+	cursor:pointer;
+	z-index:1;
+	background:#222;
+}
+.tvp_time_panel {
+	position:absolute;
+	bottom:0px;
+	left:50%;
+	margin-left:-38.5px;
+	z-index:2;
+	font-size:13px;
+}
+.play {
+	position:absolute;
+	top:50%;
+	width:80px;
+	height:80px;
+	left:50%;
+	margin-top:-60px;
+	margin-left:-40px;
+	z-index:5;
+	background:url(mobile2.png) no-repeat;
+	opacity:0.8;
+}
+.panel {
+	display:none;
+    position: absolute;
+	margin:auto;
+    width: 500px;
+	height: 100px;
+    top: 0;
+	bottom:0;
+	right:0;
+    left:0;
+	background:#0000007a;
+	color:#ffffff;
+	font-family:;
+	border-radius:10px;
+}
+.panel a {
+	float:left;
+	width:28%;
+	border: 1px solid  #FFF;
+	padding:3px;
+	border-radius:4px;
+    margin: 10px 8px;
+	text-align:center;
+}
+.panel a:link {
+	text-decoration:none;
+	color:#ffffff;
+}
+.panel a:visited {
+	text-decoration:none;
+	color:#ffffff;
+}
+.panel a:hover {
+	background:#33ff00a6;
+	text-decoration:none;
+	font-weight:bold;
+}
+.panel a:active {
+	text-decoration:none;
+	color:#ffffff;
+	font-weight:bold;
+}
+.slide {
+	margin:0;
+	padding:0;
+	border-top:solid 0px #000000;
+}
+.Chok8 {
+	z-index: 99999999;
+	display:block;
+	position:relative;
+	right:0px;
+	width:70px;
+	height:25px;
+	padding-top:5px;
+	font-family:;
+	font-family:arial,sans-serif;
+	font-size:14px;
+	color:#ffffff;
+	background:#00000050;
+	text-decoration:none;
+	text-align:center;
+}
+.hide{display:none!important;}
+.focus{background-color:#33ff00a6;}
+
+.t_box{display: block; font-size:13px; letter-spacing:1px; background: rgba(0,0,0,0.3); color: #fff; position: absolute; top: 0; right:0; left:70px; z-index: 99990; width: 92%;height:30px}
+.t_cen{float: left; overflow: hidden; width:100%; height: 30px;}
+.t_cen ul{height:30px;margin: 0 -30px;}
+.t_cen ul li{overflow: hidden;text-overflow:ellipsis;white-space: nowrap;margin: 5px 0 10px 0;}
+.t_cen .font_zd {background: #ff1500;padding:1px 5px;margin-right: 5px;border-radius: 2px;}
+.t_cen .font_ld {background: #0080FF;padding:1px 5px;margin-right: 5px;border-radius: 2px;}
+.t_cen .font_hd {background: #FE2EF7;padding:1px 5px;margin-right: 5px;border-radius: 2px;}
+.t_close{position: absolute; z-index:99990; top:8px; right:0px; background:url(https://cdn.jsdelivr.net/gh/xhhtv/jiexi@master/vipphp/close.png) no-repeat;background-size:contain;width:14px;height:14px}
+@media (max-width:760px){
+.panel {width: 80%;}
+.panel a {width:23%;}
+.t_box{ font-size:13px; letter-spacing:0px; width:80%;}
+.t_cen{width:100%;}
+.t_cen ul{width: 93%;}
+.t_close{right:3px; width:13px;height:13px}
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+		name="viewport" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Chok吧免费解析</title>
+		<meta name="keywords" content="全网视频解析,VIP在线解析,视频VIP在线解析,VIP视频在线解析,vip视频解析,vip解析,万能vip视频解析,vip视频全能解析">
+		<meta name="description" content="本站为广大网友提供VIP解析等解析服务，让你省去购买视频VIP费用，欢迎大家收藏本站，并将它介绍给您的朋友！">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/503609719/chok/jiexi/chok8jx.css">
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js">
+		</script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/503609719/chok/jiexi/chok8jx.js">
+		</script>
+	</head>
+	<body style="overflow-y:hidden;">
+		<div class="panel">
+			<a id="1x" class="focus" href="javascript:QQ('https://jx.parwix.com:4433/player/?url=')">
+				一线
+			</a>
+			<a id="2x" href="javascript:QQ('https://jx.eptept.com/?url=')">
+				二线
+			</a>
+			<a id="3x" href="javascript:QQ('https://api.jhdyw.vip/?url=')">
+				三线
+			</a>
+			<a id="4x" href="javascript:QQ('https://jx.aidouer.net/?url=')">
+				四线
+			</a>
+			<a id="5x" href="javascript:QQ('https://jx.renrenmi.cc/?url=')">
+				五线
+			</a>
+			<a id="6x" href="javascript:QQ('https://www.nxflv.com/?url=')">
+				六线
+			</a>
+			<a id="7x" href="javascript:QQ('https://www.pangujiexi.com/jiexi/?url=')">
+				七线
+			</a>
+			<a id="qiupian" href="https://www.chok8.com/gbook.html" target="_blank">
+				求片/留言
+			</a>
+			<a id="xx" href="javascript:;">
+				关闭
+			</a>
+		</div>
+		<div class="slide">
+			<a class="Chok8">
+				更换线路
+			</a>
+			<div id="t_box" class="t_box">
+				<div id="t_cen" class="t_cen">
+					<ul>
+						<li>
+							<span class="font_hd">提示</span>视频载入速度与网速有关，请耐心等待几秒钟
+						</li>
+						<li>
+							<span class="font_ld">技巧</span>右下角可以使用倍速播放
+						</li>
+						<li>
+							<span class="font_zd">提醒</span>若视频加载失败，请“更换线路”重试
+						</li>
+					</ul>
+				</div>
+				<a class="t_close" href="javascript:void(0)" onclick="t_cl()"></a>
+			</div>
+		</div>
+		<div id="mg" style="margin:-27px auto;width:100%;height:100%;">
+		   <iframe id="Chok8" scrolling="no" allowtransparency="true" frameborder="0"
+			width="100%"  height="100%" align="middle" hspace="0" vspace="0" allowFullscreen="true" marginheight="0" marginwidth="0" name="tv">
+			</iframe>
+			<script type="text/javascript">
+				url = getQuery('url');
+				if(url==''){
+					$('#Chok8').remove()
+					$("#mg").html('<style>h1{color:#FFFFFF; text-align:center; font-family: Microsoft Jhenghei;}p{color:#CCCCCC; font-size: 1.2rem;text-align:center;font-family: Microsoft Jhenghei;}</style><table width="100%" height="100%" align="center"><td align="center"><h1>请填入视频URL地址</font><font size="2"></font></p></table>');
+				}
+				function getQuery(variable)
+				{
+       				var query = window.location.search.substring(1);
+       				var vars = query.split("&");
+       				for (var i=0;i<vars.length;i++) {
+               				var pair = vars[i].split("=");
+               				if(pair[0] == variable){return pair[1];}
+       				}
+       				return(false);
+				}
+				function QQ(jx) {
+					$('#Chok8').attr('src', jx + url);
+					$('.panel').toggle()
+				};
+				$(".panel").find('a').each(function() {
+					$(this).click(function() {
+						$(".panel").find(".focus").each(function() {
+							$(this).removeClass('focus')
+						});
+						$(this).addClass('focus')
+					})
+				});
+				$('#playerCnt').prepend('');
+				$(function() {
+					$('#Chok8').attr('src', 'https://www.chok8.com/jx/?url=' + url);
+					setInterval('autoScroll(".t_cen")', 3500);
+				});
+				function autoScroll(obj) {
+					$(obj).find("ul").animate({
+						marginTop: "-25px"
+					}, 500, function() {
+						$(this).css({
+							marginTop: "0px"
+						}).find("li:first").appendTo(this)
+					})
+				};
+				function t_cl() {
+					$('#t_box').remove()
+				};
+			</script>
+		</div>
+</body>
+</html>
