@@ -2,7 +2,32 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>请使用浏览器打开</title>
-<script src="https://chok8.coding.net/p/Chok/d/Chok/git/raw/master/jump" type="text/javascript"></script>
+<script type="text/javascript">
+		function is_weixin() {
+		    var ua = navigator.userAgent.toLowerCase();
+		    if (ua.match(/MicroMessenger/i) == "micromessenger") {
+		        return true;
+		    } else {
+		        return false;
+		    }
+		}
+		var isWeixin = is_weixin();
+
+		
+function GetQueryString(name)
+{
+     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+     var r = window.location.search.substr(1).match(reg);
+     if(r!=null)return  unescape(r[2]); return null;
+}
+		
+		
+		if(isWeixin){
+
+		}else{
+		    window.location = GetQueryString("url");
+		}
+</script>
 </head>
 <body bgcolor="#4D4D4D">
 <div><img src="https://ae01.alicdn.com/kf/U4c694a0c0c014401b1dbe087c7dc8f1d7.jpg" width="100%" height="100%"></div>
