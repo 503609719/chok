@@ -32,10 +32,10 @@ if (urls.indexOf('.m3u8') > -1 || urls.indexOf('.flv') > -1|| urls.indexOf('.mp4
 	    if (ishttps) {
 		    var urls = urls.replace('http://', 'https://');
 		}
-		var playurl = '//gai4.gitee.io/chok/dp.html?url=' + urls
+		var playurl = './dp.html?url=' + urls
 	}
 } else if (urls.indexOf('.qq.com') > -1 || urls.indexOf('.iqiyi.com') > -1 || urls.indexOf('.bilibili.com') > -1 || urls.indexOf('.mgtv.com') > -1 || urls.indexOf('.youku.com') > -1 || urls.indexOf('.sohu.com') > -1 || urls.indexOf('.le.com') > -1 || urls.indexOf('.pptv.com') > -1|| urls.indexOf('.ixigua.com') > -1) {
-	var playurl = 'https://gai4.gitee.io/chok/jiexi/?url=' + urls;
+	var playurl = './jiexi/?url=' + urls;
 } else {
 	var playurl = urls
 }
