@@ -27,7 +27,7 @@ var urls = GetQueryString('url') ? GetQueryString('url') : './welcome.html';
 var ishttps = 'https:' == document.location.protocol ? true : false;
 var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
 if (urls.indexOf('.m3u8') > -1 || urls.indexOf('.flv') > -1|| urls.indexOf('.mp4') > -1) {
-	var playurl = '//gai4.gitee.io/chok/dp.html?url=' + urls;
+	var playurl = './dp.html?url=' + urls;
 	if ((navigator.userAgent.indexOf('MSIE') >= 0) || (navigator.userAgent.indexOf('Trident') >= 0)) {
 	    if (ishttps) {
 		    var urls = urls.replace('http://', 'https://');
