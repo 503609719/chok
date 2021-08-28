@@ -91,24 +91,24 @@
 	document.onkeydown=function(){
 		var e = window.event||arguments[0];
 					if(e.keyCode==123){
-				alert('明天去你家把你杀了！微信chokchok8');
+				alert('明天去你家把你杀了！TG:ccchok');
 				return false;
 			}
 				if((e.ctrlKey)&&(e.shiftKey)&&(e.keyCode==73)){
-			alert('明天去你家把你杀了！微信chokchok8');
+			alert('明天去你家把你杀了！TG:ccchok');
 			return false;
 		}
 		if((e.ctrlKey)&&(e.keyCode==85)){
-			alert('明天去你家把你杀了！微信chokchok8');
+			alert('明天去你家把你杀了！TG:ccchok');
 			return false;
 		}
 		if((e.ctrlKey)&&(e.keyCode==83)){
-		   alert('明天去你家把你杀了！微信chokchok8');
+		   alert('明天去你家把你杀了！TG:ccchok');
 		   return false;
 		}
 			}
 		document.oncontextmenu=function(){
-		alert('禁止右击或长按！微信chokchok8');
+		alert('禁止右击或长按！TG:ccchok');
 		return false;
 	}
 		var threshold = 160;
