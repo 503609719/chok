@@ -102,7 +102,7 @@ var stui = {
 			});
 		},
 		'qrcode': function() {
-			$("img.qrcode").attr("src", "https://api.asilu.com/qrcode/?t=" + encodeURIComponent(stui.browser.url) + "")
+			$("img.qrcode").attr("src", "https://api.isoyu.com/qr/?m=0&e=L&p=6&url=" + encodeURIComponent(stui.browser.url) + "")
 		}
 	},
 	'common': {//公共基础
