@@ -1,64 +1,62 @@
-<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<meta name="referrer" content="never">
-<title>Chok吧播放器</title>
-<link rel="stylesheet" href="DPlayer.min.css">
-<script src="https://cdn.jsdelivr.net/npm/flv.js@latest"></script>
-<script src="hls.p2p.js"></script>
-<script src="DPlayer.min.js"></script>
-<style>body,html,.dplayer{padding:0;margin:0;width:100%;height:100%;background-color:#000;}a{text-decoration:none;}.dplayer-menu{display:none!important} </style>
+<meta name="referrer" content="no-referrer"/>
+<title>免费播放器</title>
+<link rel="dns-prefetch" href="https://g.alicdn.com/">
+<link rel="dns-prefetch" href="https://player.alicdn.com/">
+<link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.9.23/skins/default/aliplayer-min.css" />
+<script type="text/javascript" charset="utf-8" src="https://g.alicdn.com/de/prismplayer/2.9.23/aliplayer-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://player.alicdn.com/aliplayer/presentation/js/aliplayercomponents.min.js"></script>
+<link href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/dplayer/1.25.0/DPlayer.min.css" type="text/css" rel="stylesheet" />
+<script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/hls.js/1.1.5/hls.min.js" type="application/javascript"></script>
+<script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/dplayer/1.25.0/DPlayer.min.js" type="application/javascript"></script>
+<style>body,html,.dplayer{padding:0;margin:0;width:100%;height:100%;background-color:#000;}a{text-decoration:none;}.dplayer-menu{display:none!important}.slide{margin:0;padding:0;border-top:solid 0px #000000;}</style>
 </head>
-<body>
-<div id="player" class="dplayer"></div>
+<body style="overflow-y:hidden;overflow-x:hidden;" oncontextmenu="return false" onselectstart="return false">
+<script language="javascript">
+function codefans(){
+var box=document.getElementById("divbox");
+box.style.display="none";
+}
+setTimeout("codefans()",5000);
+</script>
+<div id="divbox" style="width:100%; margin:0 auto;  z-index:9999999999; font-size:18px; position:absolute; color:#08b7fc;text-align:center;"> #请手动点击播放#<br/>#等30秒无反应可更换线路#</div>
+<div id="player" class="dplayer" style="width: 100%;height: 100%"></div>
 <script type="text/javascript">
+//if (top === self) {window.close();window.location = "about:blank";}
+//try{top.location.hostname;if (top.location.hostname != window.location.hostname) {top.location.href =window.location.hostname;}}catch(e){top.location.href = window.location.hostname;}
 function GetQueryString(a) {
 	var b = new RegExp("(^|&)" + a + "=([^&]*)(&|$)", "i");
 	var r = window.location.search.substr(1).match(b);
 	if (r != null) return (r[2]);
-	return null
-}
+	return null}
 var urls = GetQueryString('url');
-var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
-        {
-	var pic = "";
-    var dp = new DPlayer({
-		element: document.getElementById("player"),
-		autoplay:true,
-        loop:true,
-        screenshot:true,
-        hotkey:true,
-        preload:'auto',
-		video: {
-			url: urls,
-			pic: 'https://cdn.jsdelivr.net/gh/DPlayer-D/danmu@latest/img/loading_wap.gif',
-		}
-	});
-	dp.on('loadeddata', function() {
-		cookie.get(urls) ? dp.seek(cookie.get(urls)) : dp.notice("视频已就绪");
-		dp.on('timeupdate', function() {
-			if (cookie) cookie.set(urls, dp.video.currentTime, 30)
-		})
-	});
-	var cookie = {
-		'set': function(a, b, c) {
-			var d = new Date();
-			d.setTime(d.getTime() + c * 24 * 60 * 60 * 1000);
-			var e = document.cookie.match(new RegExp('(^| )' + a + '=([^;]*)(;|$)'));
-			document.cookie = a + '=' + escape(b) + ';path=/;expires=' + d.toUTCString()
-		},
-		'get': function(a) {
-			var b = document.cookie.match(new RegExp('(^| )' + a + '=([^;]*)(;|$)'));
-			if (b != null) return unescape(b[2])
-		},
-		'put': function(a) {
-			var b = a.replace(/[^a-z]+/ig, '');
-			var b = b.substring(b.length - 32);
-			return b
-		}
+var nexts = GetQueryString('next');
+if(urls.indexOf("m3u8") >0 | urls.indexOf('mp4')>0)
+{var randoms = {
+	chok_codes: ['<script type="text/javascript">{    var dp = new DPlayer({		element: document.getElementById("player"),		autoplay:true,        loop:true,            hotkey:true,        airplay:true,        preload:\'auto\',		video:{			url: urls,			pic: \'https://pic3.58cdn.com.cn/p1/big/n_v212d7563c34f1452aaea6b2b90917976d.jpg\',		},		    highlight: [        {            time: 300,            text: \'tips:请勿相信视频广告与字幕!\'        },        {            time: 1000,            text: \'感觉本站不错的话请多分享!\'        },        {            time: 1800,            text: \'提醒:您已观看30分钟,注意休息!\'        },        {            time: 3000,            text: \'喜欢本站的话请收藏起来!\'        }         ],        });    dp.on(\'ended\', function (){        if(parent.MacPlayer.PlayLinkNext!=\'\'){            top.location.href = parent.MacPlayer.PlayLinkNext;        }    });	dp.on(\'loadeddata\', function() {		cookie.get(urls) ? dp.seek(cookie.get(urls)) : dp.notice("视频已就绪,请多分享,谢谢支持");		dp.on(\'timeupdate\', function() {			if (cookie) cookie.set(urls, dp.video.currentTime, 30)		})	});	var cookie = {		\'set\': function(a, b, c) {			var d = new Date();			d.setTime(d.getTime() + c * 24 * 60 * 60 * 1000);			var e = document.cookie.match(new RegExp(\'(^| )\' + a + \'=([^;]*)(;|$)\'));			document.cookie = a + \'=\' + escape(b) + \';path=/;expires=\' + d.toUTCString()		},		\'get\': function(a) {			var b = document.cookie.match(new RegExp(\'(^| )\' + a + \'=([^;]*)(;|$)\'));			if (b != null) return unescape(b[2])		},		\'put\': function(a) {			var b = a.replace(/[^a-z]+/ig, \'\');			var b = b.substring(b.length - 32);			return b		}	}}<'+'/script>','<script type="text/javascript">{ var player=new Aliplayer({id:"player",     source: urls,     cover: \'https://pic3.58cdn.com.cn/p1/big/n_v212d7563c34f1452aaea6b2b90917976d.jpg\',       width: "100%",     height: "100%",   autoplay: true,    preload: true,     rePlay: true,playsinline: false, useH5Prism: false,     isLive: false, components:[{name:"MemoryPlayComponent",              type:AliPlayerComponent.MemoryPlayComponent,args:[true]}],}, 		function(player){});		function endedHandle(){if(parent.MacPlayer.PlayLinkNext!=\'\'){            top.location.href = parent.MacPlayer.PlayLinkNext;        }  player.loadByUrl(parent.MacPlayer.PlayLinkNext);}player.on("ended", endedHandle);		try{document.getElementById("A").style.height=parent.MacPlayer.Height+"px"}catch(e){}}<'+'/script>'],
+	chok_weight: [10,10],
+	get_random: function(weight) {
+		var s = eval(weight.join('+'));
+		var r = Math.floor(Math.random() * s);
+		var w = 0;
+		var n = weight.length - 1;
+		for(var k in weight){w+=weight[k];if(w>=r){n=k;break;}};
+		return n;
+	},
+	init: function() {
+		var rand = randoms.get_random(randoms.chok_weight);
+		document.write(randoms.chok_codes[rand]);
 	}
+}
+randoms.init();}
+else if (urls.indexOf('.qq.com') > -1 || urls.indexOf('.iqiyi.com') > -1 || urls.indexOf('.bilibili.com') > -1 || urls.indexOf('.mgtv.com') > -1 || urls.indexOf('.youku.com') > -1 || urls.indexOf('.sohu.com') > -1 || urls.indexOf('.le.com') > -1 || urls.indexOf('.pptv.com') > -1|| urls.indexOf('.ixigua.com') > -1) 
+{var playurl = 'https://jx.jsonplayer.com/player/?url=' + urls;
+document.getElementById('player').innerHTML = '<iframe width="100%" height="100%" allowTransparency="true" allowfullscreen="true" frameborder="0" scrolling="no" src="' + playurl + '"></iframe>';}
+else {var playurl = urls
+document.getElementById('player').innerHTML = '<iframe width="100%" height="100%" allowTransparency="true" allowfullscreen="true" frameborder="0" scrolling="no" src="' + playurl + '"></iframe>';
 }
 </script>
 </body>
