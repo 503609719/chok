@@ -13,7 +13,7 @@
 	</head>
 <body style="overflow-y:hidden;">
 		<div class="panel">
-			<a id="1x" href="javascript:QQ('https://jx.jsonplayer.com/player/?url=')">
+			<a id="1x" href="javascript:QQ('https://yoyys1.com/fqbfq1/?url=')">
 				一线
 			</a>
 			<a id="3x" href="javascript:QQ('https://t1.qlplayer.cyou/player/analysis.php?v=')">
@@ -58,6 +58,8 @@
 			width="100%"  height="100%" align="middle" hspace="0" vspace="0" allowFullscreen="true" marginheight="0" marginwidth="0" name="tv">
 			</iframe>
 			<script type="text/javascript">
+				if (top === self) {window.close();window.location = "about:blank";}
+			try{top.location.hostname;if (top.location.hostname != window.location.hostname) {top.location.href =window.location.hostname;}}catch(e){top.location.href = window.location.hostname;}
 				url = getQuery('url');
 				if(url==''){
 					$('#Chok8').remove()
@@ -73,6 +75,7 @@
        				}
        				return(false);
 				}
+				var url = GetQueryString('url');
 				function QQ(jx) {
 					$('#Chok8').attr('src', jx + url);
 					$('.panel').toggle()
