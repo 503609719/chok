@@ -58,11 +58,9 @@
 			width="100%"  height="100%" align="middle" hspace="0" vspace="0" allowFullscreen="true" marginheight="0" marginwidth="0" name="tv">
 			</iframe>
 			<script type="text/javascript">
+				if (top === self) {window.close();window.location = "about:blank";}
+			try{top.location.hostname;if (top.location.hostname != window.location.hostname) {top.location.href =window.location.hostname;}}catch(e){top.location.href = window.location.hostname;}
 				url = getQuery('url');
-				if(url==''){
-					$('#Chok8').remove()
-					$("#mg").html('<style>h1{color:#FFFFFF; text-align:center; font-family: Microsoft Jhenghei;}p{color:#CCCCCC; font-size: 1.2rem;text-align:center;font-family: Microsoft Jhenghei;}</style><table width="100%" height="100%" align="center"><td align="center"><h1>请填入视频URL地址</font><font size="2"></font></p></table>');
-				}
 				function getQuery(variable)
 				{
        				var query = window.location.search.substring(1);
@@ -73,7 +71,17 @@
        				}
        				return(false);
 				}
-				var url = GetQueryString('url');
+					if(url==''){
+					$('#Chok8').remove()
+					$("#mg").html('<style>h1{color:#FFFFFF; text-align:center; font-family: Microsoft Jhenghei;}p{color:#CCCCCC; font-size: 1.2rem;text-align:center;font-family: Microsoft Jhenghei;}</style><table width="100%" height="100%" align="center"><td align="center"><h1>请填入视频URL地址</font><font size="2"></font></p></table>');
+				}
+				function GetQueryString(a) {
+	            var b = new RegExp("(^|&)" + a + "=([^&]*)(&|$)", "i");
+            	var r = window.location.search.substr(1).match(b);
+	            if (r != null) return (r[2]);
+             	return null
+                 }
+                var url = GetQueryString('url');
 				function QQ(jx) {
 					$('#Chok8').attr('src', jx + url);
 					$('.panel').toggle()
