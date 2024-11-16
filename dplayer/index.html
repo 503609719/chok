@@ -83,7 +83,7 @@ function player(config){
     else if(config.url.indexOf(".m3u8")>0){
         $.ajaxSettings.timeout='2500'; 
         $.ajaxSettings.async = true;
-    	$.getJSON("https://api.nnsvip.sbs", {"url":config.url,"time":config.time,"key":config.key},
+    	$.getJSON("https://api.nnsvip.cn", {"url":config.url,"time":config.time,"key":config.key},
     	function(data) {
     		if(data.code=="200"){
     			TheDPlayer(data.url,config.vkey,config.next,config.contextmenu,config.contextlink,data.danmuku,config.url,config.img);
