@@ -9,7 +9,7 @@
 	<link href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/dplayer/1.25.0/DPlayer.min.css" type="text/css" rel="stylesheet" />
 <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/hls.js/1.1.5/hls.min.js" type="application/javascript"></script>
 <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/dplayer/1.25.0/DPlayer.min.js" type="application/javascript"></script>
-	<script src="https://mat1.gtimg.com/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/1.11.2/jquery.min.js"></script>
 <style>
     body,html {
     	font: 24px "Microsoft YaHei", Arial, Lucida Grande, Tahoma, sans-serif;
@@ -81,9 +81,9 @@ function player(config){
 	else if(config.url.indexOf(".qq.com")>0||config.url.indexOf(".youku.com")>0||config.url.indexOf(".iqiyi.com")>0||config.url.indexOf(".bilibili.com")>0||config.url.indexOf(".sohu.com")>0||config.url.indexOf(".le.com")>0||config.url.indexOf(".1905.com")>0||config.url.indexOf(".ixigua.com")>0||config.url.indexOf(".pptv.com")>0||config.url.indexOf("tv.cctv.")>0||config.url.indexOf("mgtv.com")>0)
 		{document.getElementById('loading').innerHTML = '<iframe width="100%" height="100%" allowTransparency="true" allowfullscreen="true" frameborder="0" scrolling="no" src="' + 'https://jx.xmflv.com/?url=' + urls + '"></iframe>';}
     else if(config.url.indexOf(".m3u8")>0){
-        $.ajaxSettings.timeout='2500'; 
+        $.ajaxSettings.timeout='3000'; 
         $.ajaxSettings.async = true;
-    	$.getJSON("https://api.nnsvip.cn", {"url":config.url,"time":config.time,"key":config.key},
+    	$.getJSON("https://jf.vidz.asia/api.php", {"url":config.url,"time":config.time,"key":config.key},
     	function(data) {
     		if(data.code=="200"){
     			TheDPlayer(data.url,config.vkey,config.next,config.contextmenu,config.contextlink,data.danmuku,config.url,config.img);
